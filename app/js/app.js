@@ -130,7 +130,7 @@
 
         responsivemenu(mobile);
 
-        // mobile.addListener(responsivemenu);
+        mobile.addListener(responsivemenu);
 
         function responsivemenu(mobile) {
             if (mobile.matches) {
@@ -167,6 +167,13 @@
         $(document).on("click", ".mobile-button", function () {
             $(this).toggleClass("active");
             $("#main-nav-mobi").slideToggle();
+        });
+        $(document).on("click", ".mobile-button-style2", function () {
+            $(this).toggleClass("active");
+            $("#main-nav-mobi").slideToggle();
+        });
+        $(document).on("click", "#main-nav-mobi .arrow", function () {
+            $(this).toggleClass("active").next().slideToggle();
         });
     };
 

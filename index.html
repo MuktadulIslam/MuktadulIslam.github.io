@@ -462,6 +462,8 @@
                 // Remove the current menu item class
                 $('.menu-item').removeClass('menu-current-item');
                 $("#main-nav-mobi").slideUp();
+                $(".mobile-button").removeClass("active");
+                
                 // Add the class to the clicked menu item
                 $(this).closest('.menu-item').addClass('menu-current-item');
 
