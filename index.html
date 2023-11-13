@@ -1,79 +1,483 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
+    <title>Cyfonii - NFT Portfolio and Landing Page HTML Template</title>
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            text-align: center;
-            padding: 50px;
-        }
+    <!-- Styles -->
+    <link rel="stylesheet" href="app/css/app.css">
+    <!-- end Styles -->
 
-        .button {
-            display: inline-block;
-            padding: 20px 40px;
-            font-size: 24px;
-            background-color: #3498db;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 20px;
-        }
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="assets/images/logo/favicon.webp">
+    <link rel="apple-touch-icon-precomposed" href="assets/images/logo/favicon.webp">
 
-        .button:hover {
-            background-color: #2980b9;
-        }
-
-        @media (max-width: 768px) {
-            .button {
-                font-size: 18px;
-                padding: 15px 30px;
-            }
-        }
-
-        .copyright {
-            font-size: 14px;
-            color: #555;
-            position: fixed;
-            bottom: 0;
-            display: flex;
-            justify-content: center; /* Align content horizontally to center */
-            align-items: center; /* Align content vertically to center */
-            left: 0;
-            right: 0;
-            background-color: #fff; /* You can set a background color for better visibility */
-            padding: 10px; /* Add padding to provide some space */
-        }
-
-        .team-members {
-            margin-top: 20px;
-        }
-        .container a{
-            text-decoration: none;
-        }
-    </style>
 </head>
-<body>
-    <div class="container">
-        <h1>Welcome to Our Project Site</h1>
-        <p>Explore our projects:</p>
-        <a href="./mini_chess.html" class="button">Project-1 (Mini Chess)</a>
-        <a href="#" class="button">Project-2 (Wumpus World)</a>
+
+<body class="home-main header-fixed">
+
+    <div class="wrapper">
+        <!-- For custom loading icon -->
+        <div class="preloader">
+            <div class="clear-loading loading-effect-2">
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header id="header_main" class="header">
+            <div class="container big">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="header__body">
+                            <div class="header__logo">
+                                <a href="index.html">
+                                    <img id="site-logo" src="assets/images/logo/logo.png" alt="Peson" data-retina="assets/images/logo/logo@2x.png" data-width="160" data-height="38">
+                                </a>
+                            </div>
+
+                            <div class="header__right">
+                                <nav id="main-nav" class="main-nav">
+                                    <ul id="menu-primary-menu" class="menu">
+
+                                        <li class="menu-item  menu-current-item">
+                                            <a href="#banner">Home</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#about">About Me</a>
+                                        </li>
+                                        <!-- <li class="menu-item">
+                                            <a href="#">Services</a>
+                                        </li> -->
+                                        <li class="menu-item">
+                                            <a href="#skills">Skills</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#projects">Projects</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#contact">Contact</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="mobile-button"><span></span></div>
+                            </div>
+
+                            <div class="header__action">
+                                <!-- <a href="#" class="action-btn"><span>Download CV</span></a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end Header -->
+
+        <!-- Banner -->
+        <section id="banner" class="banner">
+            <div class="shape right"></div>
+            <div class="container big">
+                <div class="row">
+                    <div class="col-xl-7 col-md-12">
+                        <div class="banner__left">
+                            <div class="block-text">
+                                <h2 class="heading">Hello!<br>I’m Muktadul Islam </br>
+                                    <small><span class="s1 arlo_tm_animation_text_word"></span></small>
+                                </h2>
+
+                                <div class="myself">
+                                    <p class="desc">Hey there!👋 I'm a software engineer who's enjoy to being busy in
+                                        the tech loop and thrive on new challenges. </p>
+
+                                    <a href="./assets/muktadul_Resume.pdf" class="action-btn" download><span>Download CV</span></a>
+                                </div>
+                            </div>
+
+                            <div class="pay">
+                                <div class="get_in_touch">Get In Touch <h1>&rarr;</h1>
+                                </div>
+                                <div class="list">
+                                    <ul class="social_media">
+                                        <li><a href="https://www.facebook.com/muktadul.islam.1690?mibextid=ZbWKwL"
+                                                target="_blank"><img src="./assets/images/icon/facebook.png" alt=""></a>
+                                        </li>
+                                        <li><a href="https://www.linkedin.com/in/muktadul-islam-56b2a1299/"
+                                                target="_blank"><img src="./assets/images/icon/linkedin.png" alt=""></a>
+                                        </li>
+                                        <li><a href="https://github.com/muktadulislam" target="_blank"><img
+                                                    src="./assets/images/icon/github.png" alt=""></a></li>
+                                        <li><a href="mailto:bsse1215@iit.du.ac.bd" target="_blank"><img src="./assets/images/icon/email.png"
+                                                    alt=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xl-5 col-md-12">
+                        <div id="profile_pic" class="banner__right">
+                            <div class="image">
+                                <img src="assets/images/layouts/muktadul.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Banner -->
+
+        <!-- About -->
+        <section id="about" class="about">
+            <div class="shape"></div>
+            <div class="container">
+                <div class="row rev">
+                    <div class="col-xl-5 col-md-12 about_image">
+                        <div class="about__right">
+                            <div class="images">
+                                <img class="img1" src="assets/images/layouts/about-01.jpeg" alt="">
+                                <img class="img2" src="assets/images/layouts/about-03.png" alt="">
+                                <img class="img3" src="assets/images/layouts/about-05.png" alt="">
+                                <img class="img4" src="assets/images/layouts/about-02.png" alt="">
+                                <img class="img5" src="assets/images/layouts/about-04.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-md-12">
+                        <div class="block-text">
+                            <h6 class="sub-heading"><span>About Me</span></h6>
+                            <h5 class="heading wow" data-splitting>Hello, I'm Muktadul</h5>
+                            <p class="mb-17">Currently, I'm studying a bachelor's science in software engineering at the
+                                University of Dhaka. I am a quick learner and love to learn something new.</p>
+                            <p class="mb-26">I’m a passionate Backend Developer with a considerable amount of knowledge
+                                in full stack development. I enjoy being busy with cooking up different web projects or
+                                system design. I also like programming contests, which feels like a task game to me.I
+                                have hands-on experience in microservices containerization with reverse proxification
+                                and in Machine learning algorithms.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About -->
+
+        <!-- Skills -->
+        <section id="skills" class="portfolio">
+            <div class="shape"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="block-text center">
+                            <h6 class="sub-heading"><span>Skills</span></h6>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                        <div class="portfolio__left">
+                            <div class="portfolio-box">
+                                <div class="step">Skill 1</div>
+                                <div class="content">
+                                    <h5 class="title">Web Development</h5>
+                                    <p>Make many major academic project by using Docker, Nginx, NodeJs, React, MongoDB,
+                                        MySQL, HTML/CSS, JavaScript</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-box">
+                                <div class="step">Skill 2</div>
+                                <div class="content">
+                                    <h5 class="title">Analytical Problem Solving</h5>
+                                    <p>Suspendisse tristique neque a lorem placerat pharetra. Class aptent taciti
+                                        sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-box">
+                                <div class="step">Skill 3</div>
+                                <div class="content">
+                                    <h5 class="title">Object Oriented Programming</h5>
+                                    <p>Suspendisse tristique neque a lorem placerat pharetra. Class aptent taciti
+                                        sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-box">
+                                <div class="step">Skill 4</div>
+                                <div class="content">
+                                    <h5 class="title">Problem Solving</h5>
+                                    <p>Solve 350+ probloms in Leetcode and Codeforces by using<br>
+                                        Codeforces: <a
+                                            href="https://codeforces.com/profile/Muktadul142008"><small><u>Muktadul142008</u></small></a><br>
+                                        Leetcode: <a
+                                            href="https://leetcode.com/muktadul/"><small><u>muktadul</u></small></a><br>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="portfolio-box">
+                                <div class="step">Skill 5</div>
+                                <div class="content">
+                                    <h5 class="title">Tools</h5>
+                                    <p>GitHub, Docker, Nginx, RapidAPI</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-md-6 about_image">
+                        <div class="portfolio__right">
+                            <div class="image" data-aos="fade-left" data-aos-duration="2000">
+                                <img src="assets/images/layouts/portfolio.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Skills -->
+
+        <!-- Projects -->
+        <section id="projects" class="roadmap">
+            <img src="assets/images/background/line.png" alt="" class="img-line">
+            <div class="shape"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="block-text center">
+                            <h6 class="sub-heading"><span>Projects</span></h6>
+                            <h4 class="heading wow" data-splitting>Some of my <br>
+                                Major Projects</h4>
+                        </div>
+
+                        <div class="roadmap__main" data-aos="fade-up" data-aos-duration="2000">
+                            <div class="roadmap-box">
+                                <div class="time">07/2023 - 10/2023</div>
+                                <div class="content">
+                                    <h5 class="title">Distributed System (MiniLinkedin)</h5>
+                                    <p class="text">It is a comprehensive and self-contained web application, designed
+                                        for users to
+                                        create profiles, connect, post content, and stay updated with real-time
+                                        notifications.
+                                        <br>
+                                        <u>Developed by:</u> Docker, Node.js, MongoDB, Minio, React, and Nginx
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="roadmap-box right">
+                                <div class="time">08/2023 - 08/2023</div>
+                                <div class="content">
+                                    <h5 class="title">Wumpus World</h5>
+                                    <p class="text">
+                                        Wompus World' is an AI project where an agent navigates using Propositional
+                                        Logic and Probabilistic Function.<br>
+                                        <u>Developed by:</u> React, JavaScript
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="roadmap-box">
+                                <div class="time">07/2023 - 07/2023</div>
+                                <div class="content">
+                                    <h5 class="title">Chess Game With AI</h5>
+                                    <p class="text">
+                                        In this AI group project where we have implemented "Alpha-Beta Pruning" search
+                                        and implement a custom evolution function get the best move for AI against the
+                                        user move. <br>
+                                        <u>Developed by:</u> HTML, CSS, JavaScript
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="roadmap-box right">
+                                <div class="time">01/2023 - 06/2023</div>
+                                <div class="content">
+                                    <h5 class="title">Online Doctor</h5>
+                                    <p class="text">
+                                        A digital ystem of healthcare that will provide a platform where anyone can get
+                                        registered doctors appointments and get identified his/her disease
+                                        &medicines.<br>
+                                        <u>Developed by:</u> NodeJs, React, Express, MySQL, Bootstrap
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="roadmap-box">
+                                <div class="time">01/2022 - 06/2022</div>
+                                <div class="content">
+                                    <h5 class="title">Matrix Calculator and Linear System Solver</h5>
+                                    <p class="text">
+                                        Build two custom liberty function for matrix calculation in optimal way (Using
+                                        lowcomputer memory). And the second one can be used to perform the solution of
+                                        any linear function in 6 different ways. <br>
+                                        <u>Developed by:</u> C
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="icon"></div>
+                            <div class="icon bottom"></div>
+
+
+                        </div>
+                        <div class="button">
+                            <a href="#" class="action-btn"><span>View All Projects</span></a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Projects End -->
+
+        <!-- Contact -->
+        <section id="contact" class="touch">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="block-text center">
+                            <h6 class="sub-heading"><span>Get in Touch!</span></h6>
+                        </div>
+                        <div class="touch__main">
+                            <div class="info">
+                                <h5>Contact information</h5>
+                                <ul class="list">
+                                    <li>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10 7C10 7.53043 9.78929 8.03914 9.41421 8.41421C9.03914 8.78929 8.53043 9 8 9C7.46957 9 6.96086 8.78929 6.58579 8.41421C6.21071 8.03914 6 7.53043 6 7C6 6.46957 6.21071 5.96086 6.58579 5.58579C6.96086 5.21071 7.46957 5 8 5C8.53043 5 9.03914 5.21071 9.41421 5.58579C9.78929 5.96086 10 6.46957 10 7V7Z"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M13 7C13 11.7613 8 14.5 8 14.5C8 14.5 3 11.7613 3 7C3 5.67392 3.52678 4.40215 4.46447 3.46447C5.40215 2.52678 6.67392 2 8 2C9.32608 2 10.5979 2.52678 11.5355 3.46447C12.4732 4.40215 13 5.67392 13 7V7Z"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        <p>Nazimuddin Road, Poran Dhaka</p>
+                                    </li>
+                                    <li>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_794_6441)">
+                                                <path
+                                                    d="M1.5 4.5C1.5 10.0227 5.97733 14.5 11.5 14.5H13C13.3978 14.5 13.7794 14.342 14.0607 14.0607C14.342 13.7794 14.5 13.3978 14.5 13V12.0853C14.5 11.7413 14.266 11.4413 13.932 11.358L10.9833 10.6207C10.69 10.5473 10.382 10.6573 10.2013 10.8987L9.55467 11.7607C9.36667 12.0113 9.042 12.122 8.748 12.014C7.65659 11.6128 6.66544 10.9791 5.84319 10.1568C5.02094 9.33456 4.38725 8.34341 3.986 7.252C3.878 6.958 3.98867 6.63333 4.23933 6.44533L5.10133 5.79867C5.34333 5.618 5.45267 5.30933 5.37933 5.01667L4.642 2.068C4.60143 1.9058 4.50781 1.7618 4.37604 1.65889C4.24426 1.55598 4.08187 1.50006 3.91467 1.5H3C2.60218 1.5 2.22064 1.65804 1.93934 1.93934C1.65804 2.22064 1.5 2.60218 1.5 3V4.5Z"
+                                                    stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_794_6441">
+                                                    <rect width="16" height="16" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <p>+8801601-678059<br>+8801405-678059</p>
+
+                                    </li>
+                                    <li>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14.5 4.5V11.5C14.5 11.8978 14.342 12.2794 14.0607 12.5607C13.7794 12.842 13.3978 13 13 13H3C2.60218 13 2.22064 12.842 1.93934 12.5607C1.65804 12.2794 1.5 11.8978 1.5 11.5V4.5M14.5 4.5C14.5 4.10218 14.342 3.72064 14.0607 3.43934C13.7794 3.15804 13.3978 3 13 3H3C2.60218 3 2.22064 3.15804 1.93934 3.43934C1.65804 3.72064 1.5 4.10218 1.5 4.5M14.5 4.5V4.662C14.5 4.9181 14.4345 5.16994 14.3096 5.39353C14.1848 5.61712 14.0047 5.80502 13.7867 5.93933L8.78667 9.016C8.55014 9.16169 8.2778 9.23883 8 9.23883C7.7222 9.23883 7.44986 9.16169 7.21333 9.016L2.21333 5.94C1.99528 5.80569 1.81525 5.61779 1.69038 5.3942C1.56551 5.1706 1.49997 4.91876 1.5 4.66267V4.5"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        <p class="__cf_email__">bsse1215@iit.du.ac.bd</p>
+                                    </li>
+                                </ul>
+
+                                <div class="image">
+                                    <img src="assets/images/layouts/touch.png" alt="">
+                                </div>
+                            </div>
+
+                            <form action="#" class="form-box">
+                                <div class="row">
+                                    <div class="col">
+                                        <label>Your name</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col">
+                                        <label>Your email</label>
+                                        <input type="email" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label>Your phone</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col">
+                                        <label>Subject</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label>Message</label>
+                                        <textarea name="mess" id="mess" cols="30" rows="10"></textarea>
+                                    </div>
+
+                                </div>
+                                <div class="row mb-0">
+                                    <div class="col">
+                                        <button class="action-btn"><span>Send Now</span></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Contact -->
     </div>
 
-    <div class="copyright">
-        <p>©-Copyright Made by Muktadul, Aurchey & Rifah - 2023</p>
-    </div>
+
+    <script src="app/js/jquery.min.js"></script>
+    <script src="app/js/jquery.easing.js"></script>
+    <script src="app/js/jquery-migrate.min.js"></script>
+    <script src="app/js/plugins.js"></script>
+    <script src="app/js/countto.js"></script>
+    <script src="app/js/wow.min.js"></script>
+
+    <script src="app/js/app.js"></script>
+    <script src="app/js/count-down.js"></script>
+
+    <script src="app/js/aos.js"></script>
+
+
+    <script src="app/js/swiper-bundle.min.js"></script>
+    <script src="app/js/swiper.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            // Smooth scrolling when clicking on anchor links
+            $('a[href^="#"]').on('click', function (event) {
+                if ($(window).width() <= 767) {
+                    if ($(this).attr('href') === '#about') {
+                        event.preventDefault();
+                        window.location.href = '#profile_pic';
+                        return;
+                    }
+                }
+
+                // Remove the current menu item class
+                $('.menu-item').removeClass('menu-current-item');
+
+                // Add the class to the clicked menu item
+                $(this).closest('.menu-item').addClass('menu-current-item');
+
+                var target = $($(this).attr('href'));
+                if (target.length) {
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: target.offset().top - 80
+                    }, 1000);
+                }
+            });
+        });
+    </script>
+
+
+
 </body>
+
 </html>
