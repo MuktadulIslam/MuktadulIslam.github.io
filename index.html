@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyfonii - NFT Portfolio and Landing Page HTML Template</title>
+    <title>Muktadul Islam</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="app/css/app.css">
@@ -451,6 +451,11 @@
         $(document).ready(function () {
             // Smooth scrolling when clicking on anchor links
             $('a[href^="#"]').on('click', function (event) {
+                // Remove the current menu item class
+                $('.menu-item').removeClass('menu-current-item');
+                $("#main-nav-mobi").slideUp();
+                $(".mobile-button").removeClass("active");
+
                 if ($(window).width() <= 767) {
                     if ($(this).attr('href') === '#about') {
                         event.preventDefault();
@@ -458,11 +463,6 @@
                         return;
                     }
                 }
-
-                // Remove the current menu item class
-                $('.menu-item').removeClass('menu-current-item');
-                $("#main-nav-mobi").slideUp();
-                $(".mobile-button").removeClass("active");
                 
                 // Add the class to the clicked menu item
                 $(this).closest('.menu-item').addClass('menu-current-item');
